@@ -33,24 +33,19 @@
 - Returns 0 and prints 0 if n is zero
 - Returns -1 and prints - if n is less than zero
 
-[6-print_numberz.c](./6-print_numberz.c) - Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+[6-abs.c](./6-abs.c) - Write a function that computes the absolute value of an integer.
 
-- You are not allowed to use any variable of type char
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- You can only use putchar twice in your code
-- All your code should be in the main function
+- Prototype: int \_abs(int);
 
-[7-print_tebahpla.c](./7-print_tebahpla.c) - Write a program that prints the lowercase alphabet in reverse, followed by a new line.
+[7-print_last_digit.c](./7-print_last_digit.c) - Write a function that prints the last digit of a number.
 
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar twice in your code
+- Prototype: int print_last_digit(int);
+- Returns the value of the last digit
 
-[8-print_base16.c](./8-print_base16.c) - Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
+[8-24_hours.c](./8-24_hours.c) - Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar three times in your code
+- Prototype: void jack_bauer(void);
+- You can listen to [this soundtrack](https://www.youtube.com/watch?v=btAfXqgMkPs) while coding :)
 
 [9-print_comb.c](./9-print_comb.c) - Write a program that prints all possible combinations of single-digit numbers.
 
