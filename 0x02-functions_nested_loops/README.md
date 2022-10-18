@@ -14,22 +14,24 @@
 - Prototype: void print_alphabet_x10(void);
 - You can only use \_putchar twice in your code
 
-[3-print_alphabets.c](./3-print_alphabets.c) - Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+[3-islower.c](./3-islower.c) - Write a function that checks for lowercase character.
 
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar three times in your code
+- Prototype: int \_islower(int c);
+- Returns 1 if c is lowercase
+- Returns 0 otherwise
 
-[4-print_alphabt.c](./4-print_alphabt.c) - Write a program that prints the alphabet in lowercase, followed by a new line.
+[4-isalpha.c](./4-isalpha.c) - Write a function that checks for alphabetic character.
 
-- Print all the letters except q and e
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar twice in your code
+- Prototype: int \_isalpha(int c);
+- Returns 1 if c is a letter, lowercase or uppercase
+- Returns 0 otherwise
 
-[5-print_numbers.c](./5-print_numbers.c) - Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+[5-sign.c](./5-sign.c) - Write a function that prints the sign of a number.
 
-- All your code should be in the main function
+- Prototype: int print_sign(int n);
+- Returns 1 and prints + if n is greater than zero
+- Returns 0 and prints 0 if n is zero
+- Returns -1 and prints - if n is less than zero
 
 [6-print_numberz.c](./6-print_numberz.c) - Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 
