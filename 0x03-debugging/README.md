@@ -1,11 +1,8 @@
-## 0x02. C - Functions, nested loops
+## 0x03. C - Debugging
 
 [0-main.c](./0-main.c) - Create a file named 0-main.c. This file must test that the function positive_or_negative() gives the correct output when given a case of 0.
 
-[1-alphabet.c](./1-alphabet.c) - Write a function that prints the alphabet, in lowercase, followed by a new line.
-
-- Prototype: void print_alphabet(void);
-- You can only use \_putchar twice in your code
+[1-main.c](./1-main.c)
 
 [2-print_alphabet_x10.c](./2-print_alphabet_x10.c) - Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
 
