@@ -1,32 +1,40 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main - print fibonacci
  *
- * Return: nothing
+ * Return: always 0
  */
 int main(void)
 {
-	int counter = 2;
+	unsigned long int a, a1, a2, b, b1, b2, c, c1, c2, d, e;
 
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
-
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
-	while (counter < 98)
+	a = 1;
+	b = 2;
+	c = a + b;
+	printf("%lu, ", a);
+	printf("%lu, ", b);
+	for (d = 3; d < 89; d++)
 	{
-		counter++;
-		printf("%.0f", c);
+		printf("%lu, ", c);
 		a = b;
 		b = c;
 		c = a + b;
-		if (counter < 98)
-		{
-			printf(", ");
-		}
 	}
-	printf("\n");
+	b1 = b / 1000000000;
+	b2 = b % 1000000000;
+	c1 = c / 1000000000;
+	c2 = c % 1000000000;
+	for (e = 89; e < 98; e++)
+	{
+		printf("%lu%lu, ", c1, c2);
+		a1 = b1;
+		a2 = b2;
+		b1 = c1;
+		b2 = c2;
+		c1 = a1 + b1 + ((a2 + b2) / 1000000000);
+		c2 = (a2 + b2) % 1000000000;
+	}
+printf("%lu%lu\n", c1, c2);
 	return (0);
 }
 
