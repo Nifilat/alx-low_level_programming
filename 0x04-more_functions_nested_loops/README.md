@@ -1,4 +1,4 @@
-## 0x02. C - Functions, nested loops
+## 0x04. C - More functions, more nested loops
 
 [0-isupper.c](./0-isupper.c) - Write a function that checks for uppercase character.
 
@@ -6,15 +6,15 @@
 - Returns 1 if c is uppercase
 - Returns 0 otherwise
 
-[1-alphabet.c](./1-alphabet.c) - Write a function that prints the alphabet, in lowercase, followed by a new line.
+[1-isdigit.c](./1-isdigit.c) - Write a function that checks for a digit (0 through 9).
 
-- Prototype: void print_alphabet(void);
-- You can only use \_putchar twice in your code
+- Prototype: int \_isdigit(int c);
+- Returns 1 if c is a digit
+- Returns 0 otherwise
 
-[2-print_alphabet_x10.c](./2-print_alphabet_x10.c) - Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+[2-mul.c](./2-mul.c) - Write a function that multiplies two integers.
 
-- Prototype: void print_alphabet_x10(void);
-- You can only use \_putchar twice in your code
+- Prototype: int mul(int a, int b);
 
 [3-islower.c](./3-islower.c) - Write a function that checks for lowercase character.
 
