@@ -16,24 +16,21 @@
 
 - Prototype: int mul(int a, int b);
 
-[3-islower.c](./3-islower.c) - Write a function that checks for lowercase character.
+[3-print_numbers.c](./3-print_numbers.c) - Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
-- Prototype: int \_islower(int c);
-- Returns 1 if c is lowercase
-- Returns 0 otherwise
+- Prototype: void print_numbers(void);
+- You can only use \_putchar twice in your code
 
-[4-isalpha.c](./4-isalpha.c) - Write a function that checks for alphabetic character.
+[4-print_most_numbers.c](./4-print_most_numbers.c) - Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
-- Prototype: int \_isalpha(int c);
-- Returns 1 if c is a letter, lowercase or uppercase
-- Returns 0 otherwise
+Prototype: void print_most_numbers(void);
+Do not print 2 and 4
+You can only use \_putchar twice in your code
 
-[5-sign.c](./5-sign.c) - Write a function that prints the sign of a number.
+[5-more_numbers.c](./5-more_numbers.c) - Write a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 
-- Prototype: int print_sign(int n);
-- Returns 1 and prints + if n is greater than zero
-- Returns 0 and prints 0 if n is zero
-- Returns -1 and prints - if n is less than zero
+- Prototype: void more_numbers(void);
+- You can only use \_putchar three times in your code
 
 [6-abs.c](./6-abs.c) - Write a function that computes the absolute value of an integer.
 
