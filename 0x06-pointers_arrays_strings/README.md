@@ -6,25 +6,32 @@
 - This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte
 - Returns a pointer to the resulting string dest
 
-[1-swap.c](./1-swap.c) - Write a function that swaps the values of two integers.
+[1-strncat.c](./1-strncat.c) - Write a function that concatenates two strings.
 
-- Prototype: void swap_int(int *a, int *b);
+- Prototype: char *\_strncat(char *dest, char \*src, int n);
+- The \_strncat function is similar to the \_strcat function, except that
+- - it will use at most n bytes from src; and
+- - src does not need to be null-terminated if it contains n or more bytes
+- Return a pointer to the resulting string dest
 
-[2-strlen.c](./2-strlen.c) - Write a function that returns the length of a string.
+[2-strncpy.c](./2-strncpy.c) - Write a function that copies a string.
 
-- Prototype: int \_strlen(char \*s);
+- Prototype: char *\_strncpy(char *dest, char \*src, int n);
+- Your function should work exactly like strncpy
 
-[3-puts.c](./3-puts.c) - Write a function that prints a string, followed by a new line, to stdout.
+[3-strcmp.c](./3-strcmp.c) - Write a function that compares two strings.
 
-- Prototype: void \_puts(char \*str);
+- Prototype: int \_strcmp(char *s1, char *s2);
+- Your function should work exactly like strcmp
 
-[4-print_rev.c](./4-print_rev.c) - Write a function that prints a string, in reverse, followed by a new line.
+[4-rev_array.c](./4-rev_array.c) - Write a function that reverses the content of an array of integers.
 
-- Prototype: void print_rev(char \*s);
+- Prototype: void reverse_array(int \*a, int n);
+- Where n is the number of elements of the array
 
-[5-rev_string.c](./5-rev_string.c) - Write a function that reverses a string.
+[5-string_toupper.c](./5-string_toupper.c) - Write a function that changes all lowercase letters of a string to uppercase.
 
-- Prototype: void rev_string(char \*s);
+- Prototype: char _string_toupper(char _);
 
 [6-puts2.c](./6-puts2.c) - Write a function that prints every other character of a string, starting with the first character, followed by a new line.
 
