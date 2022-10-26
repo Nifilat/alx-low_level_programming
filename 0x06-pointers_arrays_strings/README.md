@@ -33,45 +33,73 @@
 
 - Prototype: char _string_toupper(char _);
 
-[6-puts2.c](./6-puts2.c) - Write a function that prints every other character of a string, starting with the first character, followed by a new line.
+[6-cap_string.c](./6-cap_string.c) - Write a function that capitalizes all words of a string.
 
-- Prototype: void puts2(char \*str);
+- Prototype: char _cap_string(char _);
+- Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
 
-[7-puts_half.c](./7-puts_half.c) - Write a function that prints half of a string, followed by a new line.
+[7-leet.c](./7-leet.c) - Write a function that encodes a string into 1337.
 
-- Prototype: void puts_half(char \*str);
-- The function should print the second half of the string
-- If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
+- Letters a and A should be replaced by 4
+- Letters e and E should be replaced by 3
+- Letters o and O should be replaced by 0
+- Letters t and T should be replaced by 7
+- Letters l and L should be replaced by 1
+- Prototype: char _leet(char _);
+- You can only use one if in your code
+- You can only use two loops in your code
+- You are not allowed to use switch
+- You are not allowed to use any ternary operation
 
-[8-print_array.c](./8-print_array.c) - Write a function that prints n elements of an array of integers, followed by a new line.
+[100-rot13.c](./100-rot13.c) - Write a function that encodes a string using rot13.
 
-- Prototype: void print_array(int \*a, int n);
-- where n is the number of elements of the array to be printed
-- Numbers must be separated by comma, followed by a space
-- The numbers should be displayed in the same order as they are stored in the array
-- You are allowed to use printf
+- Prototype: char _rot13(char _);
+- You can only use if statement once in your code
+- You can only use two loops in your code
+- You are not allowed to use switch
+- You are not allowed to use any ternary operation
 
-[9-strcpy.c](./9-strcpy.c) -
+[101-print_number.c](./101-print_number.c) - Write a function that prints an integer.
 
-- Prototype: char *\_strcpy(char *dest, char \*src);
-  Write a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
-
-- Return value: the pointer to dest
-
-[100-atoi.c](./100-atoi.c) - Write a function that convert a string to an integer.
-
-- Prototype: int \_atoi(char \*s);
-- The number in the string can be preceded by an infinite number of characters
-- You need to take into account all the - and + signs before the number
-- If there are no numbers in the string, the function must return 0
+- Prototype: void print_number(int n);
+- You can only use \_putchar function to print
 - You are not allowed to use long
-- You are not allowed to declare new variables of “type” array
+- You are not allowed to use arrays or pointers
 - You are not allowed to hard-code special values
-- We will use the -fsanitize=signed-integer-overflow gcc flag to compile your code.
 
-[101-keygen.c](./101-keygen.c) - Create a program that generates random valid passwords for the program 101-crackme.
+[102-magic.c](./102-magic.c) - Add one line to [this code](https://github.com/holbertonschool/make_magic_happen/blob/master/magic.c), so that the program prints a[2] = 98, followed by a new line.
 
+- You are not allowed to use the variable a in your new line of code
+- You are not allowed to modify the variable p
+- You can only write one statement
+- You are not allowed to use ,
+- You are not allowed to code anything else than the line of expected line of code at the expected line
+- Your code should be written at line 19, before the ;
+- Do not remove anything from the initial code (not even the comments)
+- and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
 - You are allowed to use the standard library
-- You don’t have to pass the betty-style tests (you still need to pass the betty-doc tests)
-- man srand, rand, time
-- gdb and objdump can help
+
+[103-infinite_add.c](./103-infinite_add.c) - Write a function that adds two numbers.
+
+- Prototype: char *infinite_add(char *n1, char *n2, char *r, int size_r);
+- Where n1 and n2 are the two numbers
+- r is the buffer that the function will use to store the result
+- size_r is the buffer size
+- The function returns a pointer to the result
+- You can assume that you will always get positive numbers, or 0
+- You can assume that there will be only digits in the strings n1 and n2
+- n1 and n2 will never be empty
+- If the result can not be stored in r the function must return 0
+
+[104-print_buffer.c](./104-print_buffer.c) - Write a function that prints a buffer.
+
+- Prototype: void print_buffer(char \*b, int size);
+- The function must print the content of size bytes of the buffer pointed by b
+- The output should print 10 bytes per line
+- Each line starts with the position of the first byte of the line in hexadecimal (8 chars), starting with 0
+- Each line shows the hexadecimal content (2 chars) of the buffer, 2 bytes at a time, separated by a space
+- Each line shows the content of the buffer. If the byte is a printable character, print the letter, if not, print .
+- Each line ends with a new line \n
+- If size is 0 or less, the output should be a new line only \n
+- You are allowed to use the standard library
+- The output should look like the following example, and formatted exactly the same way:
