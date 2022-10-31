@@ -12,10 +12,10 @@
 - The \_memcpy() function copies n bytes from memory area src to memory area dest
 - Returns a pointer to dest
 
-[2-strncpy.c](./2-strncpy.c) - Write a function that copies a string.
+[2-strchr.c](./2-strchr.c) - Write a function that locates a character in a string.
 
-- Prototype: char *\_strncpy(char *dest, char \*src, int n);
-- Your function should work exactly like strncpy
+- Prototype: char *\_strchr(char *s, char c);
+- Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
 
 [3-strcmp.c](./3-strcmp.c) - Write a function that compares two strings.
 
