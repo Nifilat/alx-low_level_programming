@@ -6,13 +6,11 @@
 - The \_memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
 - Returns a pointer to the memory area s
 
-[1-strncat.c](./1-strncat.c) - Write a function that concatenates two strings.
+[1-memcpy.c](./1-memcpy.c) - Write a function that copies memory area.
 
-- Prototype: char *\_strncat(char *dest, char \*src, int n);
-- The \_strncat function is similar to the \_strcat function, except that
-  - it will use at most n bytes from src; and
-  - src does not need to be null-terminated if it contains n or more bytes
-- Return a pointer to the resulting string dest
+- Prototype: char *\_memcpy(char *dest, char \*src, unsigned int n);
+- The \_memcpy() function copies n bytes from memory area src to memory area dest
+- Returns a pointer to dest
 
 [2-strncpy.c](./2-strncpy.c) - Write a function that copies a string.
 
