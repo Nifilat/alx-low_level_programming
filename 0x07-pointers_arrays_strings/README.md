@@ -40,10 +40,9 @@ FYI: The standard library provides a similar function: strpbrk. Run man strpbrk 
 
 FYI: The standard library provides a similar function: strstr. Run man strstr to learn more.
 
-[6-cap_string.c](./6-cap_string.c) - Write a function that capitalizes all words of a string.
+[7-print_chessboard.c](./7-print_chessboard.c) - Write a function that prints the chessboard.
 
-- Prototype: char _cap_string(char _);
-- Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
+- Prototype: void print_chessboard(char (\*a)[8]);
 
 [7-leet.c](./7-leet.c) - Write a function that encodes a string into 1337.
 
