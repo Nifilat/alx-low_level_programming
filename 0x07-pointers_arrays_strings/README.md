@@ -24,10 +24,13 @@
 
 FYI: The standard library provides a similar function: strspn. Run man strspn to learn more.
 
-[4-rev_array.c](./4-rev_array.c) - Write a function that reverses the content of an array of integers.
+[4-strpbrk.c](./4-strpbrk.c) - Write a function that searches a string for any of a set of bytes.
 
-- Prototype: void reverse_array(int \*a, int n);
-- Where n is the number of elements of the array
+- Prototype: char *\_strpbrk(char *s, char \*accept);
+- The \_strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
+- Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
+
+FYI: The standard library provides a similar function: strpbrk. Run man strpbrk to learn more.
 
 [5-string_toupper.c](./5-string_toupper.c) - Write a function that changes all lowercase letters of a string to uppercase.
 
