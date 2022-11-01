@@ -50,13 +50,9 @@ FYI: The standard library provides a similar function: strstr. Run man strstr to
 - Format: see example
 - You are allowed to use the standard library
 
-[100-rot13.c](./100-rot13.c) - Write a function that encodes a string using rot13.
+[100-set_string.c](./100-set_string.c) -Write a function that sets the value of a pointer to a char.
 
-- Prototype: char _rot13(char _);
-- You can only use if statement once in your code
-- You can only use two loops in your code
-- You are not allowed to use switch
-- You are not allowed to use any ternary operation
+- Prototype: void set_string(char \**s, char *to);
 
 [101-print_number.c](./101-print_number.c) - Write a function that prints an integer.
 
