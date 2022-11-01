@@ -44,18 +44,11 @@ FYI: The standard library provides a similar function: strstr. Run man strstr to
 
 - Prototype: void print_chessboard(char (\*a)[8]);
 
-[7-leet.c](./7-leet.c) - Write a function that encodes a string into 1337.
+[8-print_diagsums.c](./8-print_diagsums.c) - Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
-- Letters a and A should be replaced by 4
-- Letters e and E should be replaced by 3
-- Letters o and O should be replaced by 0
-- Letters t and T should be replaced by 7
-- Letters l and L should be replaced by 1
-- Prototype: char _leet(char _);
-- You can only use one if in your code
-- You can only use two loops in your code
-- You are not allowed to use switch
-- You are not allowed to use any ternary operation
+- Prototype: void print_diagsums(int \*a, int size);
+- Format: see example
+- You are allowed to use the standard library
 
 [100-rot13.c](./100-rot13.c) - Write a function that encodes a string using rot13.
 
