@@ -17,10 +17,12 @@
 - Prototype: char *\_strchr(char *s, char c);
 - Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
 
-[3-strcmp.c](./3-strcmp.c) - Write a function that compares two strings.
+[3-strspn.c](./3-strspn.c) - Write a function that gets the length of a prefix substring.
 
-- Prototype: int \_strcmp(char *s1, char *s2);
-- Your function should work exactly like strcmp
+- Prototype: unsigned int \_strspn(char *s, char *accept);
+- Returns the number of bytes in the initial segment of s which consist only of bytes from accept
+
+FYI: The standard library provides a similar function: strspn. Run man strspn to learn more.
 
 [4-rev_array.c](./4-rev_array.c) - Write a function that reverses the content of an array of integers.
 
