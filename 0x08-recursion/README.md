@@ -10,10 +10,11 @@ FYI: The standard library provides a similar function: puts. Run man puts to lea
 
 - Prototype: void \_print_rev_recursion(char \*s);
 
-[2-strchr.c](./2-strchr.c) - Write a function that locates a character in a string.
+[2-strlen_recursion.c](./2-strlen_recursion.c) - Write a function that returns the length of a string.
 
-- Prototype: char *\_strchr(char *s, char c);
-- Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
+- Prototype: int \_strlen_recursion(char \*s);
+
+FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
 
 [3-strspn.c](./3-strspn.c) - Write a function that gets the length of a prefix substring.
 
