@@ -16,12 +16,11 @@ FYI: The standard library provides a similar function: puts. Run man puts to lea
 
 FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
 
-[3-strspn.c](./3-strspn.c) - Write a function that gets the length of a prefix substring.
+[3-factorial.c](./3-factorial.c) - Write a function that returns the factorial of a given number.
 
-- Prototype: unsigned int \_strspn(char *s, char *accept);
-- Returns the number of bytes in the initial segment of s which consist only of bytes from accept
-
-FYI: The standard library provides a similar function: strspn. Run man strspn to learn more.
+- Prototype: int factorial(int n);
+- If n is lower than 0, the function should return -1 to indicate an error
+- Factorial of 0 is 1
 
 [4-strpbrk.c](./4-strpbrk.c) - Write a function that searches a string for any of a set of bytes.
 
