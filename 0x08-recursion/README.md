@@ -22,13 +22,12 @@ FYI: The standard library provides a similar function: strlen. Run man strlen to
 - If n is lower than 0, the function should return -1 to indicate an error
 - Factorial of 0 is 1
 
-[4-strpbrk.c](./4-strpbrk.c) - Write a function that searches a string for any of a set of bytes.
+[4-pow_recursion.c](./4-pow_recursion.c) - Write a function that returns the value of x raised to the power of y.
 
-- Prototype: char *\_strpbrk(char *s, char \*accept);
-- The \_strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
-- Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
+- Prototype: int \_pow_recursion(int x, int y);
+- If y is lower than 0, the function should return -1
 
-FYI: The standard library provides a similar function: strpbrk. Run man strpbrk to learn more.
+FYI: The standard library provides a different function: pow. Run man pow to learn more.
 
 [5-strstr.c](./5-strstr.c) - Write a function that locates a substring.
 
