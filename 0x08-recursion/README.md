@@ -6,11 +6,9 @@
 
 FYI: The standard library provides a similar function: puts. Run man puts to learn more.
 
-[1-memcpy.c](./1-memcpy.c) - Write a function that copies memory area.
+[1-print_rev_recursion.c](./1-print_rev_recursion.c) - Write a function that prints a string in reverse.
 
-- Prototype: char *\_memcpy(char *dest, char \*src, unsigned int n);
-- The \_memcpy() function copies n bytes from memory area src to memory area dest
-- Returns a pointer to dest
+- Prototype: void \_print_rev_recursion(char \*s);
 
 [2-strchr.c](./2-strchr.c) - Write a function that locates a character in a string.
 
