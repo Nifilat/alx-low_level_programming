@@ -36,9 +36,9 @@ FYI: The standard library provides a different function: pow. Run man pow to lea
 
 FYI: The standard library provides a different function: sqrt. Run man sqrt to learn more.
 
-[7-print_chessboard.c](./7-print_chessboard.c) - Write a function that prints the chessboard.
+[6-is_prime_number.c](./6-is_prime_number.c) - Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
-- Prototype: void print_chessboard(char (\*a)[8]);
+- Prototype: int is_prime_number(int n);
 
 [8-print_diagsums.c](./8-print_diagsums.c) - Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
