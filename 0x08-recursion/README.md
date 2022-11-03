@@ -45,9 +45,8 @@ FYI: The standard library provides a different function: sqrt. Run man sqrt to l
 - Prototype: int is_palindrome(char \*s);
 - An empty string is a palindrome
 
-[101-crackme_password](./101-crackme_password) - Create a file that contains the password for the [crackme2](https://github.com/holbertonschool/0x06.c) executable.
+[101-wildcmp.c](./101-wildcmp.c) - Write a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
 
-- Your file should contain the exact password, no new line, no extra space
-- ltrace, ldd, gdb and objdump can help
-- You may need to install the openssl library to run the crakme2 program: sudo apt install libssl-dev
-- Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
+- Prototype: int wildcmp(char *s1, char *s2);
+- s2 can contain the special character \*.
+- The special char \* can replace any string (including an empty string)
