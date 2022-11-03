@@ -40,15 +40,10 @@ FYI: The standard library provides a different function: sqrt. Run man sqrt to l
 
 - Prototype: int is_prime_number(int n);
 
-[8-print_diagsums.c](./8-print_diagsums.c) - Write a function that prints the sum of the two diagonals of a square matrix of integers.
+[100-is_palindrome.c](./100-is_palindrome.c) -Write a function that returns 1 if a string is a palindrome and 0 if not.
 
-- Prototype: void print_diagsums(int \*a, int size);
-- Format: see example
-- You are allowed to use the standard library
-
-[100-set_string.c](./100-set_string.c) -Write a function that sets the value of a pointer to a char.
-
-- Prototype: void set_string(char \**s, char *to);
+- Prototype: int is_palindrome(char \*s);
+- An empty string is a palindrome
 
 [101-crackme_password](./101-crackme_password) - Create a file that contains the password for the [crackme2](https://github.com/holbertonschool/0x06.c) executable.
 
