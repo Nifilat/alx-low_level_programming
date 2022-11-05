@@ -20,12 +20,12 @@
 - You can assume that the two numbers and result of the multiplication can be stored in an integer
 - If the program does not receive two arguments, your program should print Error, followed by a new line, and return 1
 
-[4-pow_recursion.c](./4-pow_recursion.c) - Write a function that returns the value of x raised to the power of y.
+[4-add.c](./4-add.c) - Write a program that adds positive numbers.
 
-- Prototype: int \_pow_recursion(int x, int y);
-- If y is lower than 0, the function should return -1
-
-FYI: The standard library provides a different function: pow. Run man pow to learn more.
+- Print the result, followed by a new line
+- If no number is passed to the program, print 0, followed by a new line
+- If one of the number contains symbols that are not digits, print Error, followed by a new line, and return 1
+- You can assume that numbers and the addition of all the numbers can be stored in an int
 
 [5-sqrt_recursion.c](./5-sqrt_recursion.c) - Write a function that returns the natural square root of a number.
 
