@@ -5,9 +5,9 @@
 - If you rename the program, it will print the new name, without having to compile it again
 - You should not remove the path before the name of the program
 
-[1-print_rev_recursion.c](./1-print_rev_recursion.c) - Write a function that prints a string in reverse.
+[1-args.c](./1-args.c) - Write a program that prints the number of arguments passed into it.
 
-- Prototype: void \_print_rev_recursion(char \*s);
+- Your program should print a number, followed by a new line
 
 [2-strlen_recursion.c](./2-strlen_recursion.c) - Write a function that returns the length of a string.
 
