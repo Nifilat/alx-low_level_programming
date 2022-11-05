@@ -14,11 +14,11 @@
 - All arguments should be printed, including the first one
 - Only print one argument per line, ending with a new line
 
-[3-factorial.c](./3-factorial.c) - Write a function that returns the factorial of a given number.
+[3-mul.c](./3-mul.c) - Write a program that multiplies two numbers.
 
-- Prototype: int factorial(int n);
-- If n is lower than 0, the function should return -1 to indicate an error
-- Factorial of 0 is 1
+- Your program should print the result of the multiplication, followed by a new line
+- You can assume that the two numbers and result of the multiplication can be stored in an integer
+- If the program does not receive two arguments, your program should print Error, followed by a new line, and return 1
 
 [4-pow_recursion.c](./4-pow_recursion.c) - Write a function that returns the value of x raised to the power of y.
 
