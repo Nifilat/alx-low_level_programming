@@ -9,11 +9,10 @@
 
 - Your program should print a number, followed by a new line
 
-[2-strlen_recursion.c](./2-strlen_recursion.c) - Write a function that returns the length of a string.
+[2-args.c](./2-args.c) - Write a program that prints all arguments it receives.
 
-- Prototype: int \_strlen_recursion(char \*s);
-
-FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
+- All arguments should be printed, including the first one
+- Only print one argument per line, ending with a new line
 
 [3-factorial.c](./3-factorial.c) - Write a function that returns the factorial of a given number.
 
