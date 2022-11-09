@@ -34,11 +34,9 @@ FYI: The standard library provides a similar function: strdup. Run man strdup to
 - Prototype: void free_grid(int \*\*grid, int height);
 - Note that we will compile with your alloc_grid.c file. Make sure it compiles.
 
-[100-change.c](./100-change.c) - Write a program that prints the minimum number of coins to make change for an amount of money.
+[100-argstostr.c](./100-argstostr.c) - Write a function that concatenates all the arguments of your program.
 
-- Usage: ./change cents
-- where cents is the amount of cents you need to give back
-- if the number of arguments passed to your program is not exactly 1, print Error, followed by a new line, and return 1
-- you should use atoi to parse the parameter passed to your program
-- If the number passed as the argument is negative, print 0, followed by a new line
-- You can use an unlimited number of coins of values 25, 10, 5, 2, and 1 cent
+- Prototype: char \*argstostr(int ac, char \*\*av);
+- Returns NULL if ac == 0 or av == NULL
+- Returns a pointer to a new string, or NULL if it fails
+- Each argument should be followed by a \n in the new string
