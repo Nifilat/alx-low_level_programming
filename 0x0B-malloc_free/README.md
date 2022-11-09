@@ -22,11 +22,12 @@ FYI: The standard library provides a similar function: strdup. Run man strdup to
 - if NULL is passed, treat it as an empty string
 - The function should return NULL on failure
 
-[3-mul.c](./3-mul.c) - Write a program that multiplies two numbers.
+[3-alloc_grid.c](./3-alloc_grid.c) - Write a function that returns a pointer to a 2 dimensional array of integers.
 
-- Your program should print the result of the multiplication, followed by a new line
-- You can assume that the two numbers and result of the multiplication can be stored in an integer
-- If the program does not receive two arguments, your program should print Error, followed by a new line, and return 1
+- Prototype: int \*\*alloc_grid(int width, int height);
+- Each element of the grid should be initialized to 0
+- The function should return NULL on failure
+- If width or height is 0 or negative, return NULL
 
 [4-add.c](./4-add.c) - Write a program that adds positive numbers.
 
