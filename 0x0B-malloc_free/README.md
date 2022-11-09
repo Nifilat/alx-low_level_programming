@@ -29,12 +29,10 @@ FYI: The standard library provides a similar function: strdup. Run man strdup to
 - The function should return NULL on failure
 - If width or height is 0 or negative, return NULL
 
-[4-add.c](./4-add.c) - Write a program that adds positive numbers.
+[4-free_grid.c](./4-free_grid.c) - Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
 
-- Print the result, followed by a new line
-- If no number is passed to the program, print 0, followed by a new line
-- If one of the number contains symbols that are not digits, print Error, followed by a new line, and return 1
-- You can assume that numbers and the addition of all the numbers can be stored in an int
+- Prototype: void free_grid(int \*\*grid, int height);
+- Note that we will compile with your alloc_grid.c file. Make sure it compiles.
 
 [100-change.c](./100-change.c) - Write a program that prints the minimum number of coins to make change for an amount of money.
 
