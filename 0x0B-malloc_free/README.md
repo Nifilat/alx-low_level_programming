@@ -15,10 +15,12 @@
 
 FYI: The standard library provides a similar function: strdup. Run man strdup to learn more.
 
-[2-args.c](./2-args.c) - Write a program that prints all arguments it receives.
+[2-str_concat.c](./2-str_concat.c) - Write a function that concatenates two strings.
 
-- All arguments should be printed, including the first one
-- Only print one argument per line, ending with a new line
+- Prototype: char *str_concat(char *s1, char \*s2);
+- The returned pointer should point to a newly allocated space in memory which contains the contents of s1, followed by the contents of s2, and null terminated
+- if NULL is passed, treat it as an empty string
+- The function should return NULL on failure
 
 [3-mul.c](./3-mul.c) - Write a program that multiplies two numbers.
 
