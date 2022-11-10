@@ -6,14 +6,13 @@
 - Returns a pointer to the allocated memory
 - if malloc fails, the malloc_checked function should cause normal process termination with a status value of 98
 
-[1-strdup.c](./1-strdup.c) - Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+[1-string_nconcat.c](./1-string_nconcat.c) - Write a function that concatenates two strings.
 
-- Prototype: char *\_strdup(char *str);
-- The \_strdup() function returns a pointer to a new string which is a duplicate of the string str. Memory for the new string is obtained with malloc, and can be freed with free.
-- Returns NULL if str = NULL
-- On success, the \_strdup function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available
-
-FYI: The standard library provides a similar function: strdup. Run man strdup to learn more.
+- Prototype: char *string_nconcat(char *s1, char \*s2, unsigned int n);
+- The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated
+- If the function fails, it should return NULL
+- If n is greater or equal to the length of s2 then use the entire string s2
+- if NULL is passed, treat it as an empty string
 
 [2-str_concat.c](./2-str_concat.c) - Write a function that concatenates two strings.
 
