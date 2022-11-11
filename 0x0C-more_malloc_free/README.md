@@ -24,12 +24,13 @@
 
 FYI: The standard library provides a different function: calloc. Run man calloc to learn more.
 
-[3-alloc_grid.c](./3-alloc_grid.c) - Write a function that returns a pointer to a 2 dimensional array of integers.
+[3-array_range.c](./3-array_range.c) - Write a function that creates an array of integers.
 
-- Prototype: int \*\*alloc_grid(int width, int height);
-- Each element of the grid should be initialized to 0
-- The function should return NULL on failure
-- If width or height is 0 or negative, return NULL
+- Prototype: int \*array_range(int min, int max);
+- The array created should contain all the values from min (included) to max (included), ordered from min to max
+- Return: the pointer to the newly created array
+- If min > max, return NULL
+- If malloc fails, return NULL
 
 [4-free_grid.c](./4-free_grid.c) - Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
 
