@@ -14,12 +14,15 @@
 - If n is greater or equal to the length of s2 then use the entire string s2
 - if NULL is passed, treat it as an empty string
 
-[2-str_concat.c](./2-str_concat.c) - Write a function that concatenates two strings.
+[2-calloc.c](./2-calloc.c) - Write a function that allocates memory for an array, using malloc.
 
-- Prototype: char *str_concat(char *s1, char \*s2);
-- The returned pointer should point to a newly allocated space in memory which contains the contents of s1, followed by the contents of s2, and null terminated
-- if NULL is passed, treat it as an empty string
-- The function should return NULL on failure
+- Prototype: void \*\_calloc(unsigned int nmemb, unsigned int size);
+- The \_calloc function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.
+- The memory is set to zero
+- If nmemb or size is 0, then \_calloc returns NULL
+- If malloc fails, then \_calloc returns NULL
+
+FYI: The standard library provides a different function: calloc. Run man calloc to learn more.
 
 [3-alloc_grid.c](./3-alloc_grid.c) - Write a function that returns a pointer to a 2 dimensional array of integers.
 
