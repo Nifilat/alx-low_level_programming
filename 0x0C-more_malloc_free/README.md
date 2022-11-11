@@ -32,17 +32,20 @@ FYI: The standard library provides a different function: calloc. Run man calloc 
 - If min > max, return NULL
 - If malloc fails, return NULL
 
-[4-free_grid.c](./4-free_grid.c) - Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
+[100-realloc.c](./100-realloc.c) - Write a function that reallocates a memory block using malloc and free
 
-- Prototype: void free_grid(int \*\*grid, int height);
-- Note that we will compile with your alloc_grid.c file. Make sure it compiles.
+- Prototype: void *\_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+- where ptr is a pointer to the memory previously allocated with a call to malloc: malloc(old_size)
+- old_size is the size, in bytes, of the allocated space for ptr
+- and new_size is the new size, in bytes of the new memory block
+- The contents will be copied to the newly allocated space, in the range from the start of ptr up to the minimum of the old and new sizes
+- If new_size > old_size, the “added” memory should not be initialized
+- If new_size == old_size do not do anything and return ptr
+- If ptr is NULL, then the call is equivalent to malloc(new_size), for all values of old_size and new_size
+- If new_size is equal to zero, and ptr is not NULL, then the call is equivalent to free(ptr). Return NULL
+- Don’t forget to free ptr when it makes sense
 
-[100-argstostr.c](./100-argstostr.c) - Write a function that concatenates all the arguments of your program.
-
-- Prototype: char \*argstostr(int ac, char \*\*av);
-- Returns NULL if ac == 0 or av == NULL
-- Returns a pointer to a new string, or NULL if it fails
-- Each argument should be followed by a \n in the new string
+FYI: The standard library provides a different function: realloc. Run man realloc to learn more.
 
 [101-strtow.c](./101-strtow.c) - Write a function that splits a string into words.
 
