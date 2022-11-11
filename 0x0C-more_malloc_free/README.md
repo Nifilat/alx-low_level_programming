@@ -47,12 +47,13 @@ FYI: The standard library provides a different function: calloc. Run man calloc 
 
 FYI: The standard library provides a different function: realloc. Run man realloc to learn more.
 
-[101-strtow.c](./101-strtow.c) - Write a function that splits a string into words.
+[101-mul.c](./101-mul.c) - Write a program that multiplies two positive numbers.
 
-- Prototype: char \**strtow(char *str);
-- The function returns a pointer to an array of strings (words)
-- Each element of this array should contain a single word, null-terminated
-- The last element of the returned array should be NULL
-- Words are separated by spaces
-- Returns NULL if str == NULL or str == ""
-- If your function fails, it should return NULL
+- Usage: mul num1 num2
+- num1 and num2 will be passed in base 10
+- Print the result, followed by a new line
+- If the number of arguments is incorrect, print Error, followed by a new line, and exit with a status of 98
+- num1 and num2 should only be composed of digits. If not, print Error, followed by a new line, and exit with a status of 98
+- You are allowed to use more than 5 functions in your file
+
+You can use bc (man bc) to check your results.
