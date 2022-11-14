@@ -4,15 +4,9 @@
 
 [1-pi.h](./1-pi.h) - Create a header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
 
-[2-calloc.c](./2-calloc.c) - Write a function that allocates memory for an array, using malloc.
+[2-main.c](./2-main.c) - Write a program that prints the name of the file it was compiled from, followed by a new line.
 
-- Prototype: void \*\_calloc(unsigned int nmemb, unsigned int size);
-- The \_calloc function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.
-- The memory is set to zero
-- If nmemb or size is 0, then \_calloc returns NULL
-- If malloc fails, then \_calloc returns NULL
-
-FYI: The standard library provides a different function: calloc. Run man calloc to learn more.
+- You are allowed to use the standard library
 
 [3-array_range.c](./3-array_range.c) - Write a function that creates an array of integers.
 
