@@ -8,13 +8,7 @@
 
 - You are allowed to use the standard library
 
-[3-array_range.c](./3-array_range.c) - Write a function that creates an array of integers.
-
-- Prototype: int \*array_range(int min, int max);
-- The array created should contain all the values from min (included) to max (included), ordered from min to max
-- Return: the pointer to the newly created array
-- If min > max, return NULL
-- If malloc fails, return NULL
+[3-function_like_macro.h](./3-function_like_macro.h) - Write a function-like macro ABS(x) that computes the absolute value of a number x.
 
 [100-realloc.c](./100-realloc.c) - Write a function that reallocates a memory block using malloc and free
 
