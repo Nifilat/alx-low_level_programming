@@ -2,13 +2,7 @@
 
 [0-object_like_macro.h](./0-object_like_macro.h) - Create a header file that defines a macro named SIZE as an abbreviation for the token 1024.
 
-[1-string_nconcat.c](./1-string_nconcat.c) - Write a function that concatenates two strings.
-
-- Prototype: char *string_nconcat(char *s1, char \*s2, unsigned int n);
-- The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated
-- If the function fails, it should return NULL
-- If n is greater or equal to the length of s2 then use the entire string s2
-- if NULL is passed, treat it as an empty string
+[1-pi.h](./1-pi.h) - Create a header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
 
 [2-calloc.c](./2-calloc.c) - Write a function that allocates memory for an array, using malloc.
 
