@@ -24,4 +24,6 @@
 - You have to store a copy of name and owner
 - Return NULL if the function fails
 
-[4-sum.h](./4-sum.h) - Write a function-like macro SUM(x, y) that computes the sum of the numbers x and y.
+[5-free_dog.c](./5-free_dog.c) - Write a function that frees dogs.
+
+- Prototype: void free_dog(dog_t \*d);
