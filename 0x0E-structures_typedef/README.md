@@ -10,9 +10,13 @@
 
 - Prototype: void init_dog(struct dog *d, char *name, float age, char \*owner);
 
-[2-main.c](./2-main.c) - Write a program that prints the name of the file it was compiled from, followed by a new line.
+[2-print_dog.c](./2-print_dog.c) - Write a function that prints a struct dog
 
+- Prototype: void print_dog(struct dog \*d);
+- Format: see example bellow
 - You are allowed to use the standard library
+- If an element of d is NULL, print (nil) instead of this element. (if name is NULL, print Name: (nil))
+- If d is NULL print nothing.
 
 [3-function_like_macro.h](./3-function_like_macro.h) - Write a function-like macro ABS(x) that computes the absolute value of a number x.
 
