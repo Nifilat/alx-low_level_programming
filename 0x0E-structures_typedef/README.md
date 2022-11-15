@@ -6,7 +6,9 @@
 - age, type = float
 - owner, type = char \*
 
-[1-pi.h](./1-pi.h) - Create a header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
+[1-init_dog.c](./1-init_dog.c) - Write a function that initialize a variable of type struct dog
+
+- Prototype: void init_dog(struct dog *d, char *name, float age, char \*owner);
 
 [2-main.c](./2-main.c) - Write a program that prints the name of the file it was compiled from, followed by a new line.
 
