@@ -18,6 +18,10 @@
 - If an element of d is NULL, print (nil) instead of this element. (if name is NULL, print Name: (nil))
 - If d is NULL print nothing.
 
-[3-function_like_macro.h](./3-function_like_macro.h) - Write a function-like macro ABS(x) that computes the absolute value of a number x.
+[4-new_dog.c](./4-new_dog.c) - Write a function that creates a new dog.
+
+- Prototype: dog_t *new_dog(char *name, float age, char \*owner);
+- You have to store a copy of name and owner
+- Return NULL if the function fails
 
 [4-sum.h](./4-sum.h) - Write a function-like macro SUM(x, y) that computes the sum of the numbers x and y.
