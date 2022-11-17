@@ -10,13 +10,14 @@
 - where size is the size of the array
 - and action is a pointer to the function you need to use
 
-[2-print_dog.c](./2-print_dog.c) - Write a function that prints a struct dog
+[2-int_index.c](./2-int_index.c) - Write a function that searches for an integer.
 
-- Prototype: void print_dog(struct dog \*d);
-- Format: see example bellow
-- You are allowed to use the standard library
-- If an element of d is NULL, print (nil) instead of this element. (if name is NULL, print Name: (nil))
-- If d is NULL print nothing.
+- Prototype: int int_index(int *array, int size, int (*cmp)(int));
+- where size is the number of elements in the array array
+- cmp is a pointer to the function to be used to compare values
+- int_index returns the index of the first element for which the cmp function does not return 0
+- If no element matches, return -1
+- If size <= 0, return -1
 
 [4-new_dog.c](./4-new_dog.c) - Write a function that creates a new dog.
 
