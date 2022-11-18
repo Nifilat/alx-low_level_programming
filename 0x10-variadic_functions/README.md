@@ -5,9 +5,14 @@
 - Prototype: int sum_them_all(const unsigned int n, ...);
 - If n == 0, return 0
 
-[1-print_rev_recursion.c](./1-print_rev_recursion.c) - Write a function that prints a string in reverse.
+[1-print_numbers.c](./1-print_numbers.c) - Write a function that prints numbers, followed by a new line.
 
-- Prototype: void \_print_rev_recursion(char \*s);
+- Prototype: void print_numbers(const char \*separator, const unsigned int n, ...);
+- where separator is the string to be printed between numbers
+- and n is the number of integers passed to the function
+- You are allowed to use printf
+- If separator is NULL, don’t print it
+- Print a new line at the end of your function
 
 [2-strlen_recursion.c](./2-strlen_recursion.c) - Write a function that returns the length of a string.
 
