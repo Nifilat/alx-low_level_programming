@@ -14,11 +14,15 @@
 - If separator is NULL, don’t print it
 - Print a new line at the end of your function
 
-[2-strlen_recursion.c](./2-strlen_recursion.c) - Write a function that returns the length of a string.
+[2-print_strings.c](./2-print_strings.c) - Write a function that prints strings, followed by a new line.
 
-- Prototype: int \_strlen_recursion(char \*s);
-
-FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
+- Prototype: void print_strings(const char \*separator, const unsigned int n, ...);
+- where separator is the string to be printed between the strings
+- and n is the number of strings passed to the function
+- You are allowed to use printf
+- If separator is NULL, don’t print it
+- If one of the string is NULL, print (nil) instead
+- Print a new line at the end of your function
 
 [3-factorial.c](./3-factorial.c) - Write a function that returns the factorial of a given number.
 
