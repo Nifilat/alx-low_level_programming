@@ -24,37 +24,20 @@
 - If one of the string is NULL, print (nil) instead
 - Print a new line at the end of your function
 
-[3-factorial.c](./3-factorial.c) - Write a function that returns the factorial of a given number.
+[3-print_all.c](./3-print_all.c) - Write a function that prints anything.
 
-- Prototype: int factorial(int n);
-- If n is lower than 0, the function should return -1 to indicate an error
-- Factorial of 0 is 1
-
-[4-pow_recursion.c](./4-pow_recursion.c) - Write a function that returns the value of x raised to the power of y.
-
-- Prototype: int \_pow_recursion(int x, int y);
-- If y is lower than 0, the function should return -1
-
-FYI: The standard library provides a different function: pow. Run man pow to learn more.
-
-[5-sqrt_recursion.c](./5-sqrt_recursion.c) - Write a function that returns the natural square root of a number.
-
-- Prototype: int \_sqrt_recursion(int n);
-- If n does not have a natural square root, the function should return -1
-
-FYI: The standard library provides a different function: sqrt. Run man sqrt to learn more.
-
-[6-is_prime_number.c](./6-is_prime_number.c) - Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
-
-- Prototype: int is_prime_number(int n);
-
-[100-is_palindrome.c](./100-is_palindrome.c) -Write a function that returns 1 if a string is a palindrome and 0 if not.
-
-- Prototype: int is_palindrome(char \*s);
-- An empty string is a palindrome
-
-[101-wildcmp.c](./101-wildcmp.c) - Write a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
-
-- Prototype: int wildcmp(char *s1, char *s2);
-- s2 can contain the special character \*.
-- The special char \* can replace any string (including an empty string)
+- Prototype: void print_all(const char \* const format, ...);
+- where format is a list of types of arguments passed to the function
+  - c: char
+  - i: integer
+  - f: float
+  - s: char \* (if the string is NULL, print (nil) instead
+  - any other char should be ignored
+  - see example
+- You are not allowed to use for, goto, ternary operator, else, do ... while
+- You can use a maximum of
+  - 2 while loops
+  - 2 if
+- You can declare a maximum of 9 variables
+- You are allowed to use printf
+- Print a new line at the end of your function
