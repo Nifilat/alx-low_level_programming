@@ -8,14 +8,9 @@
 - If str is NULL, print [0] (nil)
 - You are allowed to use printf
 
-[1-print_numbers.c](./1-print_numbers.c) - Write a function that prints numbers, followed by a new line.
+[1-list_len.c](./1-list_len.c) - Write a function that returns the number of elements in a linked list_t list.
 
-- Prototype: void print_numbers(const char \*separator, const unsigned int n, ...);
-- where separator is the string to be printed between numbers
-- and n is the number of integers passed to the function
-- You are allowed to use printf
-- If separator is NULL, don’t print it
-- Print a new line at the end of your function
+- Prototype: size_t list_len(const list_t \*h);
 
 [2-print_strings.c](./2-print_strings.c) - Write a function that prints strings, followed by a new line.
 
