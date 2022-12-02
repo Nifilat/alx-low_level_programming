@@ -21,9 +21,9 @@
 - Prototype: listint_t \*add_nodeint_end(listint_t \*\*head, const int n);
 - Return: the address of the new element, or NULL if it failed
 
-[4-free_list.c](./4-free_list.c) - Write a function that frees a list_t list.
+[4-free_listint.c](./4-free_listint.c) - Write a function that frees a listint_t list.
 
-- Prototype: void free_list(list_t \*head);
+- Prototype: void free_listint(listint_t \*head);
 
 [100-first.c](./100-first.c) - Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
 
