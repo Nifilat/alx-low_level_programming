@@ -11,12 +11,10 @@
 
 - Prototype: size_t listint_len(const listint_t \*h);
 
-[2-add_node.c](./2-add_node.c) - Write a function that adds a new node at the beginning of a list_t list.
+[2-add_nodeint.c](./2-add_nodeint.c) - Write a function that adds a new node at the beginning of a listint_t list.
 
-- Prototype: list_t *add_node(list_t \*\*head, const char *str);
+- Prototype: listint_t \*add_nodeint(listint_t \*\*head, const int n);
 - Return: the address of the new element, or NULL if it failed
-- str needs to be duplicated
-- You are allowed to use strdup
 
 [3-add_node_end.c](./3-add_node_end.c) - Write a function that adds a new node at the end of a list_t list.
 
