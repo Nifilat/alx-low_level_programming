@@ -30,8 +30,12 @@
 - Prototype: void free_listint2(listint_t \*\*head);
 - The function sets the head to NULL
 
-[101-hello_holberton.asm](./101-hello_holberton.asm) - Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+[6-pop_listint.c](./6-pop_listint.c) - Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
 
-- You are only allowed to use the printf function
-- You are not allowed to use interrupts
-- Your program will be compiled using nasm and gcc:
+- Prototype: int pop_listint(listint_t \*\*head);
+- if the linked list is empty return 0
+
+[101-hello_holberton.asm](./101-hello_holberton.asm) - Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
+
+- Prototype: int pop_listint(listint_t \*\*head);
+- if the linked list is empty return 0
