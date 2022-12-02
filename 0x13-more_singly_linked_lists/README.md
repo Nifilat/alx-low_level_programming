@@ -25,9 +25,10 @@
 
 - Prototype: void free_listint(listint_t \*head);
 
-[100-first.c](./100-first.c) - Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
+[5-free_listint2.c](./5-free_listint2.c) - Write a function that frees a listint_t list.
 
-- You are allowed to use the printf function
+- Prototype: void free_listint2(listint_t \*\*head);
+- The function sets the head to NULL
 
 [101-hello_holberton.asm](./101-hello_holberton.asm) - Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
 
