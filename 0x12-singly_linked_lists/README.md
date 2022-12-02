@@ -12,15 +12,12 @@
 
 - Prototype: size_t list_len(const list_t \*h);
 
-[2-print_strings.c](./2-print_strings.c) - Write a function that prints strings, followed by a new line.
+[2-add_node.c](./2-add_node.c) - Write a function that adds a new node at the beginning of a list_t list.
 
-- Prototype: void print_strings(const char \*separator, const unsigned int n, ...);
-- where separator is the string to be printed between the strings
-- and n is the number of strings passed to the function
-- You are allowed to use printf
-- If separator is NULL, don’t print it
-- If one of the string is NULL, print (nil) instead
-- Print a new line at the end of your function
+- Prototype: list_t *add_node(list_t \*\*head, const char *str);
+- Return: the address of the new element, or NULL if it failed
+- str needs to be duplicated
+- You are allowed to use strdup
 
 [3-print_all.c](./3-print_all.c) - Write a function that prints anything.
 
