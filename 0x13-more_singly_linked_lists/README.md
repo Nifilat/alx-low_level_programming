@@ -7,9 +7,9 @@
 - Format: see example
 - You are allowed to use printf
 
-[1-list_len.c](./1-list_len.c) - Write a function that returns the number of elements in a linked list_t list.
+[1-listint_len.c](./1-listint_len.c) - Write a function that returns the number of elements in a linked listint_t list.
 
-- Prototype: size_t list_len(const list_t \*h);
+- Prototype: size_t listint_len(const listint_t \*h);
 
 [2-add_node.c](./2-add_node.c) - Write a function that adds a new node at the beginning of a list_t list.
 
