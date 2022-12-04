@@ -34,10 +34,10 @@
 - where index is the index, starting from 0 of the bit you want to set
 - Returns: 1 if it worked, or -1 if an error occurred
 
-[5-free_listint2.c](./5-free_listint2.c) - Write a function that frees a listint_t list.
+[5-flip_bits.c](./5-flip_bits.c) - Write a function that returns the number of bits you would need to flip to get from one number to another.
 
-- Prototype: void free_listint2(listint_t \*\*head);
-- The function sets the head to NULL
+- Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
+- You are not allowed to use the % or / operators
 
 [6-pop_listint.c](./6-pop_listint.c) - Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
 
