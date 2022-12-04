@@ -22,10 +22,11 @@
 - where index is the index, starting from 0 of the bit you want to get
 - Returns: the value of the bit at index index or -1 if an error occured
 
-[3-add_nodeint_end.c](./3-add_nodeint_end.c) - Write a function that adds a new node at the end of a listint_t list.
+[3-set_bit.c](./3-set_bit.c) - Write a function that sets the value of a bit to 1 at a given index.
 
-- Prototype: listint_t \*add_nodeint_end(listint_t \*\*head, const int n);
-- Return: the address of the new element, or NULL if it failed
+- Prototype: int set_bit(unsigned long int \*n, unsigned int index);
+- where index is the index, starting from 0 of the bit you want to set
+- Returns: 1 if it worked, or -1 if an error occurred
 
 [4-free_listint.c](./4-free_listint.c) - Write a function that frees a listint_t list.
 
