@@ -5,12 +5,16 @@
 - Prototype: unsigned int binary_to_uint(const char \*b);
 - where b is pointing to a string of 0 and 1 chars
 - Return: the converted number, or 0 if
-- - there is one or more chars in the string b that is not 0 or 1
-- - b is NULL
+  - there is one or more chars in the string b that is not 0 or 1
+  - b is NULL
 
-[1-listint_len.c](./1-listint_len.c) - Write a function that returns the number of elements in a linked listint_t list.
+[1-print_binary.c](./1-print_binary.c) - Write a function that prints the binary representation of a number.
 
-- Prototype: size_t listint_len(const listint_t \*h);
+- Prototype: void print_binary(unsigned long int n);
+- Format: see example
+- You are not allowed to use arrays
+- You are not allowed to use malloc
+- You are not allowed to use the % or / operators
 
 [2-add_nodeint.c](./2-add_nodeint.c) - Write a function that adds a new node at the beginning of a listint_t list.
 
