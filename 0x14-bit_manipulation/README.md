@@ -28,9 +28,11 @@
 - where index is the index, starting from 0 of the bit you want to set
 - Returns: 1 if it worked, or -1 if an error occurred
 
-[4-free_listint.c](./4-free_listint.c) - Write a function that frees a listint_t list.
+[4-clear_bit.c](./4-clear_bit.c) - Write a function that sets the value of a bit to 0 at a given index.
 
-- Prototype: void free_listint(listint_t \*head);
+- Prototype: int clear_bit(unsigned long int \*n, unsigned int index);
+- where index is the index, starting from 0 of the bit you want to set
+- Returns: 1 if it worked, or -1 if an error occurred
 
 [5-free_listint2.c](./5-free_listint2.c) - Write a function that frees a listint_t list.
 
