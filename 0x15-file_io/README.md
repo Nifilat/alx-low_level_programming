@@ -43,23 +43,23 @@
 - You must read 1,024 bytes at a time from the file_from to make less system calls. Use a buffer
 - You are allowed to use dprintf
 
-[4-clear_bit.c](./4-clear_bit.c) - Write a function that sets the value of a bit to 0 at a given index.
+[100-elf_header.c](./100-elf_header.c) - Write a program that displays the information contained in the ELF header at the start of an ELF file.
 
-- Prototype: int clear_bit(unsigned long int \*n, unsigned int index);
-- where index is the index, starting from 0 of the bit you want to set
-- Returns: 1 if it worked, or -1 if an error occurred
+- Usage: elf_header elf_filename
+- Displayed information: (no less, no more, do not include trailing whitespace)
+  - Magic
+  - Class
+  - Data
+  - Version
+  - OS/ABI
+  - ABI Version
+  - Type
+  - Entry point address
+- Format: the same as readelf -h (version 2.26.1)
+- If the file is not an ELF file, or on error, exit with status code 98 and display a comprehensive error message to stderr
+- You are allowed to use lseek once
+- You are allowed to use read a maximum of 2 times at runtime
+- You are allowed to have as many functions as you want in your source file
+- You are allowed to use printf
 
-[5-flip_bits.c](./5-flip_bits.c) - Write a function that returns the number of bits you would need to flip to get from one number to another.
-
-- Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
-- You are not allowed to use the % or / operators
-
-[100-get_endianness.c](./100-get_endianness.c) - Write a function that checks the endianness.
-
-- Prototype: int get_endianness(void);
-- Returns: 0 if big endian, 1 if little endian
-
-[101-password](./101-password) - Find the password for [this program](https://github.com/holbertonschool/0x13.c).
-
-- Save the password in the file 101-password
-- Your file should contain the exact password, no new line, no extra space
+man elf, readelf
