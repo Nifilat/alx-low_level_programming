@@ -30,12 +30,12 @@ You are allowed to copy and paste the function from [this page](https://gist.git
 - Returns: 1 if it succeeded, 0 otherwise
 - In case of collision, add the new node at the beginning of the list
 
-[4-print_alphabt.c](./4-print_alphabt.c) - Write a program that prints the alphabet in lowercase, followed by a new line.
+[4-hash_table_get.c](./4-hash_table_get.c) - Write a function that retrieves a value associated with a key.
 
-- Print all the letters except q and e
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar twice in your code
+- Prototype: char *hash_table_get(const hash_table_t *ht, const char \*key);
+  - where ht is the hash table you want to look into
+  - and key is the key you are looking for
+- Returns the value associated with the element, or NULL if key couldn’t be found
 
 [5-print_numbers.c](./5-print_numbers.c) - Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 
