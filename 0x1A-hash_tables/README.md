@@ -46,12 +46,10 @@ You are allowed to copy and paste the function from [this page](https://gist.git
 - Format: see example
 - If ht is NULL, don’t print anything
 
-[6-print_numberz.c](./6-print_numberz.c) - Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+[6-hash_table_delete.c](./6-hash_table_delete.c) - Write a function that deletes a hash table.
 
-- You are not allowed to use any variable of type char
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- You can only use putchar twice in your code
-- All your code should be in the main function
+- Prototype: void hash_table_delete(hash_table_t \*ht);
+  - where ht is the hash table
 
 [7-print_tebahpla.c](./7-print_tebahpla.c) - Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 
