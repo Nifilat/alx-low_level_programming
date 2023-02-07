@@ -21,11 +21,14 @@ You are allowed to copy and paste the function from [this page](https://gist.git
 - Returns the index at which the key/value pair should be stored in the array of the hash table
 - You will have to use this hash function for all the next tasks
 
-[3-print_alphabets.c](./3-print_alphabets.c) - Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+[3-hash_table_set.c](./3-hash_table_set.c) - Write a function that adds an element to the hash table.
 
-- You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
-- All your code should be in the main function
-- You can only use putchar three times in your code
+- Prototype: int hash_table_set(hash_table_t *ht, const char *key, const char \*value);
+  - Where ht is the hash table you want to add or update the key/value to
+  - key is the key. key can not be an empty string
+  - and value is the value associated with the key. value must be duplicated. value can be an empty string
+- Returns: 1 if it succeeded, 0 otherwise
+- In case of collision, add the new node at the beginning of the list
 
 [4-print_alphabt.c](./4-print_alphabt.c) - Write a program that prints the alphabet in lowercase, followed by a new line.
 
